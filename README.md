@@ -11,6 +11,6 @@ A csv file obtained from scraping op.gg which is a website with League of Legend
 Numpy, Pandas, Sklearn, Seaborn, Shap
 
 #### Content:
-2020-12-30-lolpredictionb.ipynb: Jupyter notebook containing the codes and documentations.
-images: container for images used for the notebook
-Data: container for .csv file 
+2020-12-30-lolpredictionb.ipynb: Jupyter notebook containing the codes and documentations. <br>
+images: container for images used for the notebook <br>
+Data: container for .csv file  <br>
