@@ -8,7 +8,7 @@ A csv file obtained from scraping op.gg which is a website with League of Legend
 
 
 #### Libraries Used:
-- Numpy, Pandas, Sklearn, Seaborn, Shap
+Numpy, Pandas, Sklearn, Seaborn, Shap
 
 #### Content:
 2020-12-30-lolpredictionb.ipynb: Jupyter notebook containing the codes and documentations.
