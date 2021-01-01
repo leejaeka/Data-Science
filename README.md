@@ -1,7 +1,7 @@
 # LoL S11 Blog Post
 
-Link to the blog post on Medium.com (https://jaekangai.medium.com/season-11-will-make-you-want-to-play-more-aggressively-1bd421220b4d)
-Link to better readability .ipynb file (https://leejaeka.github.io/fastblog/python/jupyter/crisp-dm/league%20of%20legends/linear%20regression/random%20forest/udacity/2020/12/30/lolpredictb.html)
+Link to the blog post on Medium.com (https://jaekangai.medium.com/season-11-will-make-you-want-to-play-more-aggressively-1bd421220b4d) <br>
+Link to better readability .ipynb file (https://leejaeka.github.io/fastblog/python/jupyter/crisp-dm/league%20of%20legends/linear%20regression/random%20forest/udacity/2020/12/30/lolpredictb.html) <br>
 This is a popular online game 'League of Legend' analysis following CRISP-DM(Cross Industry Process for Data Mining) format.
 - Business Understanding
 - Data Understanding
