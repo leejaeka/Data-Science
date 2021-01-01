@@ -1,6 +1,13 @@
 # LoL S11 Blog Post
 
-This is a popular game 'League of Legend' analysis following CRISP-DM(Cross Industry Process for Data Mining) format.
+Link to the blog post on Medium.com (https://jaekangai.medium.com/season-11-will-make-you-want-to-play-more-aggressively-1bd421220b4d)
+Link to better readability .ipynb file (https://leejaeka.github.io/fastblog/python/jupyter/crisp-dm/league%20of%20legends/linear%20regression/random%20forest/udacity/2020/12/30/lolpredictb.html)
+This is a popular online game 'League of Legend' analysis following CRISP-DM(Cross Industry Process for Data Mining) format.
+- Business Understanding
+- Data Understanding
+- Prepare Data
+- Data Modeling
+- Evaluate the Results
 Linear Regression and Random Forests were used to find out how the new season update impacted the game as well as in depth exploratory data analysis on current season's trend and best team composition.
 
 #### Dataset:
