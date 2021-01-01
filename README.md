@@ -1,5 +1,9 @@
 # LoL S11 Blog Post
 
+#### A Note to whomever(Udacity) is reviewing this
+Hello, I did not submit a blog post link so below is the link to my blog post. Thank you : )
+https://jaekangai.medium.com/season-11-will-make-you-want-to-play-more-aggressively-1bd421220b4d
+
 This is a popular game 'League of Legend' analysis following CRISP-DM(Cross Industry Process for Data Mining) format.
 Linear Regression and Random Forests were used to find out how the new season update impacted the game as well as in depth exploratory data analysis on current season's trend and best team composition.
 
