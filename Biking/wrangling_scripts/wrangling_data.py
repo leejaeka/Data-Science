@@ -94,7 +94,7 @@ def data_wrangle(df):
 	df['Month'] = mon
 	df['Day'] = d
 	df['Hour'] = h
-	df = df.drop(['Activity Date'], axis=1) # drop original
+	#df = df.drop(['Activity Date'], axis=1) # drop original
 
 	# Create dummy variable
 	df = create_dummy_df(df, ['Activity Type'], dummy_na = True)
@@ -147,8 +147,10 @@ def return_figures():
 		px.scatter(
 			filled_df, 
 			x='Distance.1', 
-			y='Calories', opacity=0.65
-		).add_traces(go.Scatter(x=x_range, y=y_range, name='Regression Fit'))
+			y='Calories', 
+			color='Elevation Gain',
+			opacity=0.8
+		).add_traces(go.Scatter(x=x_range, y=y_range, name=''))
 	)
 	layout_one = dict(title = 'Calories over Distance', xaxis = dict(title = 'Distance'),yaxis = dict(title = 'Calories'))
 
@@ -156,19 +158,41 @@ def return_figures():
 	df_two = cleandata('data/activities.csv')
 	graph_two = []
 	graph_two.append(
-		go.Bar(
-			x=df_two.Calories,
-			y=df_two['Moving Time']
+		px.scatter(
+			filled_df, 
+			x='Activity Date', 
+			y='Elevation Low', 
+			color='Activity Gear',
+			size='Athlete Weight',
+			opacity=0.66,
+			size_max=15,
+			labels={
+				"Distance.1": "Distance(km)",
+				"Average Grade": "Avg Gradient(slope)",
+			}
 		)
 	)
+	layout_two = dict(title = 'Biking')
 
+	# third chart
+	graph_three = []
+	features = ["Year", "Athlete Weight", "Elevation Low", "Max Grade"]
+	graph_three.append(
+		px.scatter_matrix(
+			filled_df,
+			dimensions=features,
+			color="Activity Gear"
+		).update_traces(diagonal_visible=False)
+	)
+	layout_three = dict(title = 'PCA')
 	
-	layout_two = dict(title = 'Testing')
+
 
 	# append all charts to the figures list
 	figures = []
 	figures.append(dict(data=graph_one[0], layout=layout_one))
-	figures.append(dict(data=graph_two, layout=layout_two))
+	figures.append(dict(data=graph_two[0], layout=layout_two))
+	figures.append(dict(data=graph_three[0], layout=layout_three))
 	
 	
 	return figures
