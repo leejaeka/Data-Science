@@ -11,8 +11,7 @@ from sklearn.ensemble import RandomForestClassifier
 import shap
 import plotly.graph_objs as go
 import plotly.express as px
-import io
-from base64 import b64encode
+from sklearn.decomposition import PCA
 
 
 # Function to create dummy variables
@@ -186,13 +185,30 @@ def return_figures():
 	)
 	layout_three = dict(title = 'PCA')
 	
+	# fourth chart
+	graph_four = []
+	X = filled_df[['Athlete Weight','Year','Elevation Low','Max Grade']]
 
+	pca = PCA(n_components=3)
+	components = pca.fit_transform(X)
+	total_var = pca.explained_variance_ratio_.sum()*100
+
+	graph_four.append(
+		px.scatter_3d(
+			filled_df, 
+			x='Athlete Weight', y='Year', z='Elevation Low',
+			color='Activity Gear',
+			title=f'Total Explained Variance: {total_var:.2f}%'
+		)
+	)
+	layout_four = dict(title = 'PCA3D')
 
 	# append all charts to the figures list
 	figures = []
 	figures.append(dict(data=graph_one[0], layout=layout_one))
 	figures.append(dict(data=graph_two[0], layout=layout_two))
 	figures.append(dict(data=graph_three[0], layout=layout_three))
+	figures.append(dict(data=graph_four[0], layout=layout_four))
 	
 	
 	return figures
