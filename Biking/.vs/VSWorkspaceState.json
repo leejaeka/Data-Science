@@ -2,6 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\data",
+    "\\myapp",
     "\\wrangling_scripts"
   ],
   "SelectedNode": "\\wrangling_scripts\\wrangling_data.py",
