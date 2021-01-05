@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data",
-    "\\myapp",
-    "\\wrangling_scripts"
+    "\\myapp\\templates"
   ],
-  "SelectedNode": "\\wrangling_scripts\\wrangling_data.py",
+  "SelectedNode": "\\requirements.txt",
   "PreviewInSolutionExplorer": false
 }

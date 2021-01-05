@@ -30,7 +30,7 @@ matplotlib==3.3.3
 numpy==1.18.5
 oauthlib==3.1.0
 opt-einsum==3.3.0
-pandas==1.2.0
+pandas==1.1.5
 Pillow==8.1.0
 plotly==4.14.1
 protobuf==3.13.0
@@ -48,14 +48,8 @@ scipy==1.4.1
 seaborn==0.11.1
 six==1.15.0
 sklearn==0.0
-tensorboard==2.3.0
-tensorboard-plugin-wit==1.7.0
-tensorflow-gpu==2.3.1
-tensorflow-gpu-estimator==2.3.0
 termcolor==1.1.0
 threadpoolctl==2.1.0
-torchaudio==0.7.0
-torchvision==0.8.1+cu110
 urllib3==1.25.11
 virtualenv==16.7.9
 Werkzeug==1.0.1
