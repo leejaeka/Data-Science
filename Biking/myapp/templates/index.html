@@ -41,10 +41,10 @@
         <!--social media buttons column-->
         <div class="col-1 border-right">
             <div id="follow-me" class="mt-3">
-                <a href="#">
+                <a href="www.linkedin.com/in/jaekang-lee" target="_blank">
                     <img src="/static/img/linkedinlogo.png" alt="linkedin" class="img-fluid mb-4 ml-2">
                 </a>
-                <a href="https://github.com/leejaeka">
+                <a href="https://github.com/leejaeka" target="_blank">
                     <img src="/static/img/githublogo.png" alt="github" class="img-fluid ml-2">
                 </a>
             </div>
@@ -78,12 +78,17 @@
                                 }
                         </style>
                         <div id="{{ids[0]}}" style="z-index:-1;"></div>
+                        <p>Clearly, more distance and elevation results in more calories burned.<br />
+                        Elevation gain burns more calories than distance.</p>
                     </div>
                     <div class="col-6">
                         <div>
                             Heatmap
                             <img src="/static/img/heatmap.png" class="zoom img-fluid ml-2" style="z-index:1;" />
-                            
+                            <p>
+                                Lots of correlated columns. <br />
+                                - Athelete Weight, Bike Weight | Moving Time, Distance, Elevation etc
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -94,6 +99,11 @@
                         <div id="chart3">
                             SHAP plot for Gusto
                             <img src="/static/img/SHAP.png" class="img-fluid ml-2" style="z-index:1;" />
+                            <p>
+                                The computer was able to correctly categorize type of bike used for a trip 0.842% of the time. RandomForestClassifier was used.<br />
+                                From this we can tell that machine looks mostly at Year, Elevation Low, Athlete Weight, Elevation High to guess which bike was used.<br />
+                                For example, the later year the trip took, the computer increased the chance of bike being Gusto rose by nearly 20%.
+                            </p>
                         </div>
                     </div>
                     <div class="col-6">
@@ -103,12 +113,12 @@
                         </div>
                     </div>
                 </div>
-                <h1>Machine Learning Section</h1>
-                <h4>Principle Component Analysis</h4>
+                <h1>Principle Component Analysis</h1>
                 <!--Create another row and place a fifth chart in that row-->
                 <div class="row mb-6">
                     <div class="col-12">
                         <div id="chart5">
+                            PCA 3D
                             <div id="{{ids[3]}}"></div>
                         </div>
                     </div>
@@ -116,6 +126,7 @@
                 <div class="row mb-6">
                     <div class="col-12">
                         <div id="chart5">
+                            Scatterplot by date
                             <div id="{{ids[1]}}"></div>
                         </div>
                     </div>
@@ -123,6 +134,7 @@
                 <div class="row mb-6">
                     <div class="col-12">
                         <div id="chart5">
+                            PCA 2D
                             <div id="{{ids[2]}}"></div>
                         </div>
                     </div>
