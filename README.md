@@ -21,3 +21,15 @@ Numpy, Pandas, Sklearn, Seaborn, Shap
 2020-12-30-lolpredictionb.ipynb: Jupyter notebook containing the codes and documentations. <br>
 images: container for images used for the notebook <br>
 Data: container for .csv file  <br>
+
+# Biking Trips
+
+Link to the [webapp](https://truman-bike.herokuapp.com/)
+Note that this webapp may take awhile to load. Wait and it will load eventually.
+This is a webapp built with Python, Flask, html, javascript, Plotly and Heroku
+
+#### Dataset:
+A csv file obtained from my [friend](https://www.trumanhung.tech/) who likes to bike.
+
+#### Content:
+Biking folder has everything.
