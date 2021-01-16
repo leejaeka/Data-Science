@@ -1,3 +1,26 @@
+# Biking Trips
+
+Link to the [webapp](https://truman-bike.herokuapp.com/)
+Note that this webapp may take awhile to load. Wait and it will load eventually.
+This is a webapp built with Python, Flask, html, javascript, Plotly and Heroku
+
+#### Dataset:
+A csv file obtained from my [friend](https://www.trumanhung.tech/) who likes to bike.
+
+#### Content:
+Biking folder has everything.
+
+# Recommendation System with IBM Watson
+Link to the [notebook blog post]()
+A Udacity project using EDA, rank based recommendations, user-user based collaborative filtering, matrix factorization to recommend personalized articles to users and new users.
+Received positive review from Udacity.
+
+#### Dataset:
+Two csv file, user-item-interactions.csv and articles_community.csv. Real data from IBM Watson Studio platform.
+
+#### Content:
+Recommendation folder has everything.
+
 # LoL S11 Blog Post
 
 Link to the blog post on Medium.com (https://jaekangai.medium.com/season-11-will-make-you-want-to-play-more-aggressively-1bd421220b4d) <br>
@@ -22,14 +45,3 @@ Numpy, Pandas, Sklearn, Seaborn, Shap
 images: container for images used for the notebook <br>
 Data: container for .csv file  <br>
 
-# Biking Trips
-
-Link to the [webapp](https://truman-bike.herokuapp.com/)
-Note that this webapp may take awhile to load. Wait and it will load eventually.
-This is a webapp built with Python, Flask, html, javascript, Plotly and Heroku
-
-#### Dataset:
-A csv file obtained from my [friend](https://www.trumanhung.tech/) who likes to bike.
-
-#### Content:
-Biking folder has everything.
